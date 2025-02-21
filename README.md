@@ -36,12 +36,20 @@ The final part involves the implementation of the RSA signature and verification
 
 ## 📂 Project Structure
 
-- **`rsa.py`** → RSA implementation (key generation, encryption, decryption) with OAEP.  
-- **`aes.py`** → AES encryption and decryption for hybrid encryption.  
-- **`signature.py`** → RSA signature generation and verification implementation.  
-- **`test.py`** → Test scripts for encrypting and signing files and generating results.  
-- **`results/`** → Contains encrypted files, signatures, and hash comparisons.  
-- **`report.pdf`** → Detailed explanation of the cryptographic processes, results, and analysis.  
+This project is divided into 3 parts, as detailed in the PDF.
+
+- **`parte1.py`** → Executes **Part 1** of the project (Key generation and RSA encryption with OAEP).
+  
+- **Parts 2 and 3**: Each of these parts has two scripts:
+  - **Scripts with `_myAES`**: Use my **own AES implementation**.
+  - **Scripts without `_myAES`**: Use the **Crypto.Cipher** library for the AES implementation.
+
+The scripts are organized as follows:
+  - **`parte2_myAES.py`** → Implements **Part 2** using my own AES implementation (hybrid encryption).
+  - **`parte2.py`** → Implements **Part 2** using the **Crypto.Cipher** library (hybrid encryption).
+  - **`parte3_myAES.py`** → Implements **Part 3** for signing and verification using my own AES implementation.
+  - **`parte3.py`** → Implements **Part 3** for signing and verification using the **Crypto.Cipher** library.
+
 
 ## 🛠️ Technologies Used
 
